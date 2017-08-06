@@ -41,6 +41,7 @@ public class UserTest {
 	@Test
 	public void testUpdate(){
 		User user = new User();
+		user.setId(1);
 		user.setUsername("lisi");
 		user.setAge(30);
 		userMapper.update(user);
