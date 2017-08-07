@@ -1,34 +1,33 @@
 package com.test.model;
 
-/**
- * Created by yinhao on 17/8/5.
- */
 public class User {
-    private int id;
-    private int age;
-    private String username;
+    private Integer userId;
 
-    public int getId() {
-        return id;
+    private Integer userAge;
+
+    private String userName;
+
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public int getAge() {
-        return age;
+    public Integer getUserAge() {
+        return userAge;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setUserAge(Integer userAge) {
+        this.userAge = userAge;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName == null ? null : userName.trim();
     }
 }

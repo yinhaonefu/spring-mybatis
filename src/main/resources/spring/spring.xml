@@ -25,10 +25,10 @@
 	<!-- 1. 数据源 : DriverManagerDataSource -->
 	<bean id="dataSource"
 		  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/my_test" />
-		<property name="username" value="root" />
-		<property name="password" value="lijinqiu1983#A" />
+		<property name="driverClassName" value="${db.driverClass}" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
 	</bean>
 
 	<!--
